@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCompletionApi", "AutoCompletionApi\AutoCompletionApi.csproj", "{A46C76E5-4067-4E84-9F34-11A38FC45FBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCompletionApi.AutoCompletion.Service", "AutoCompletionApi.AutoCompletion.Service\AutoCompletionApi.AutoCompletion.Service.csproj", "{ED33C8DA-C36F-408D-8C57-1B2DF5D4E65E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A46C76E5-4067-4E84-9F34-11A38FC45FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46C76E5-4067-4E84-9F34-11A38FC45FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46C76E5-4067-4E84-9F34-11A38FC45FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46C76E5-4067-4E84-9F34-11A38FC45FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED33C8DA-C36F-408D-8C57-1B2DF5D4E65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED33C8DA-C36F-408D-8C57-1B2DF5D4E65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED33C8DA-C36F-408D-8C57-1B2DF5D4E65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED33C8DA-C36F-408D-8C57-1B2DF5D4E65E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {313EDEC9-37AE-4517-B6F6-9A4F3F1F37B6}
+	EndGlobalSection
+EndGlobal
