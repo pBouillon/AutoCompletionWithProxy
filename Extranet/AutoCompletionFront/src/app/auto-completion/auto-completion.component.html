@@ -8,6 +8,7 @@
               id="city"
               [formControl]="form"
               [matAutocomplete]="citySuggestion"
+              (onkeypress)="onFieldUpdate(this)"
               class="form-control border"
               aria-describedby="fieldHint"
               matInput>

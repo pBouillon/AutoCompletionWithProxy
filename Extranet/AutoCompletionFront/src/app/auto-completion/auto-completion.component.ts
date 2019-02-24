@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { AutoCompletionService } from './auto-completion.service';
 
 @Component({
   selector: 'app-auto-completion',
@@ -8,16 +9,24 @@ import { FormControl } from '@angular/forms';
 })
 export class AutoCompletionComponent implements OnInit {
 
-  // -- Angular Material tutorial
-  options: string[] = ['salut', 'mon', 'flo'];
-  // -- Angular Material tutorial
-
   form: FormControl;
   suggestions: string[];
+
+  constructor(
+    private autoCompletionService: AutoCompletionService,
+  ) { }
 
   ngOnInit() {
     this.form = new FormControl();
     this.suggestions = [];
+  }
+
+  onFieldUpdate(element: HTMLInputElement) {
+    console.log('ui');
+    
+    this.autoCompletionService
+      .getSuggestions(element.value)
+      .subscribe(results => this.suggestions = results);
   }
 
 }

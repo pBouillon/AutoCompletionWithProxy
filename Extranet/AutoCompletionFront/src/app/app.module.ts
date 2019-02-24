@@ -9,6 +9,8 @@ import { MatInputModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { AutoCompletionComponent } from './auto-completion/auto-completion.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { AutoCompletionService } from './auto-completion/auto-completion.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const materialModules = [
   MatAutocompleteModule,
@@ -27,8 +29,12 @@ const materialModules = [
     ReactiveFormsModule,
     FormsModule,
     ...materialModules,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    AutoCompletionService,
+    HttpClientModule,
+  ],
   bootstrap: [
     AppComponent,
   ],
