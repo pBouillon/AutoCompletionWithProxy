@@ -1,0 +1,28 @@
+<form>
+  <mat-form-field class="full-width">
+
+    <div class="form-group">
+      <label for="city">Your city</label>
+
+      <input type="text" 
+              id="city"
+              [formControl]="form"
+              [matAutocomplete]="citySuggestion"
+              class="form-control border"
+              aria-describedby="fieldHint"
+              matInput>
+        
+      <small id="fieldHint" 
+              class="form-text text-muted">
+        Start typing to get suggestions
+      </small>
+
+      <mat-autocomplete #citySuggestion="matAutocomplete">
+        <mat-option *ngFor="let suggestion of suggestions" [value]="suggestion">
+          {{ suggestion }}
+        </mat-option>
+      </mat-autocomplete>
+    </div>
+
+  </mat-form-field>
+</form>
