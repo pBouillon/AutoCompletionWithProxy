@@ -26,7 +26,7 @@ namespace AutoCompletionApi.AutoCompletion.Service
         public AutoCompletionService() { }
 
         /// <summary>
-        /// Fetrches API results for the provided hint
+        /// Fetches API results for the provided hint
         /// </summary>
         /// <param name="hint">query hint</param>
         /// <returns>the stringlyfied GeoJSON</returns>
