@@ -22,8 +22,6 @@ export class AutoCompletionComponent implements OnInit {
   }
 
   onFieldUpdate(element: HTMLInputElement) {
-    console.log('ui');
-    
     this.autoCompletionService
       .getSuggestions(element.value)
       .subscribe(results => this.suggestions = results);
